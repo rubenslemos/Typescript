@@ -7,5 +7,9 @@ export function createCourse(request:Request, response:Response){
     educator: "Rubens",
     duration: 100
   })
+    CreateCourseService.execute({
+    name: "Typescript",
+    educator: "Rubens"
+  })
   return response.send()
 }
