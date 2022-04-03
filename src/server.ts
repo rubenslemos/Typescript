@@ -1,8 +1,4 @@
-import express from 'express'
-import {createCourse} from "./routes"
-
+import express from "express"
 const app = express()
-app.use(express.json())
-app.get('/', createCourse)
-
-app.listen(3333, ()=>{ console.log('Rodando...')})
+app.get("/", (request, response) => response.json({mensagem: "Hello World!"}))
+app.listen(3333, ()=> console.log("Running..."))
