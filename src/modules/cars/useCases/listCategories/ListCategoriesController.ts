@@ -6,7 +6,7 @@ class ListCategoriesController {
     
   const all = this.listCategoriesUseCase.execute()
 
-  return response.status(201).json({categorias: all})
+  return response.status(200).json(all)
   }
 }
 
